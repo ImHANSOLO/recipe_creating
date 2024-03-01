@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Creator</title>
+  </head>
+  <body>
+    <h1>Recipe Creator</h1>
+    <div>
+      <label for="title">Title:</label>
+      <input type="text" id="title" maxlength="125" required />
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <textarea id="description" maxlength="255" required></textarea>
+    </div>
+    <div>
+      <label for="imageURL">Image URL:</label>
+      <input type="url" id="imageURL" />
+    </div>
+    <button id="addStep">Add Step</button>
+    <ol id="stepsList"></ol>
+    <button id="saveRecipe">Save Recipe</button>
+    <script src="recipe.js"></script>
+  </body>
+</html>
